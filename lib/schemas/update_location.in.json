@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "A name that describes the location specified by the given latitude and longitude (must be <= 128 characters).",
+                    "type": "string"
+                },
+                "latitude": {
+                    "type": "number"
+                },
+                "longitude": {
+                    "type": "number"
+                },
+                "radius": {
+                    "description": "A radius in meters that defines a circle around the point specified by latitude and longitude. Only posts within the area specified by this circle will be shown.\nIf set to 0, effectively disables public posts for the user.\n",
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 257500
+                }
+            },
+            "required": [
+                "name"
+            ]
+        }
+    }
+}

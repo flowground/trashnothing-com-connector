@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+        "photo_id": {
+            "required": true,
+            "type": "string"
+        },
+        "degrees": {
+            "required": true,
+            "type": "integer"
+        },
+        "device_pixel_ratio": {
+            "required": false,
+            "type": "number",
+            "default": 1
+        }
+    }
+}

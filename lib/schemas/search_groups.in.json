@@ -1,0 +1,49 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "required": false,
+            "type": "string"
+        },
+        "latitude": {
+            "required": false,
+            "type": "number"
+        },
+        "longitude": {
+            "required": false,
+            "type": "number"
+        },
+        "distance": {
+            "required": false,
+            "type": "number",
+            "minimum": 0,
+            "maximum": 150,
+            "default": 100
+        },
+        "country": {
+            "required": false,
+            "type": "string"
+        },
+        "region": {
+            "required": false,
+            "type": "string"
+        },
+        "postal_code": {
+            "required": false,
+            "type": "string"
+        },
+        "page": {
+            "required": false,
+            "type": "integer",
+            "minimum": 1,
+            "default": 1
+        },
+        "per_page": {
+            "required": false,
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100,
+            "default": 20
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "group_ids": {
+            "required": true,
+            "type": "string"
+        },
+        "callback": {
+            "required": false,
+            "type": "string"
+        },
+        "access_token": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

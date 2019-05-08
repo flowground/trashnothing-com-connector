@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "description": "The new email address.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "address"
+            ]
+        }
+    }
+}

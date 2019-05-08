@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "search": {
+                    "description": "When a post matches this search query, an email alert will be sent.  Must have a length >= 2 and < 255 characters.",
+                    "type": "string"
+                },
+                "types": {
+                    "description": "A comma separated list of the post types that the alert should match against. The available post types are: offer, wanted\n",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "search"
+            ]
+        }
+    }
+}

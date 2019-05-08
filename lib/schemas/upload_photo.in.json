@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "upload_key": {
+                    "description": "A client created identifier used to associate a photo or set of photos with a post (a  random number will work - must be <= 32 characters).",
+                    "type": "string",
+                    "maxLength": 32
+                },
+                "device_pixel_ratio": {
+                    "description": "Client device pixel ratio used to determine thumbnail size (default 1.0).",
+                    "type": "number",
+                    "default": 1
+                }
+            },
+            "required": [
+                "upload_key"
+            ]
+        }
+    }
+}

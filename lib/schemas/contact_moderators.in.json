@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "group_id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "subject": {
+                    "description": "The subject of the message.",
+                    "type": "string"
+                },
+                "message": {
+                    "description": "The body of the message.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "subject"
+            ]
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "subject": {
+                    "description": "The subject.",
+                    "type": "string"
+                },
+                "message": {
+                    "description": "The message.",
+                    "type": "string"
+                },
+                "meta": {
+                    "description": "Extra information set by the client that may be useful to contextualize the feedback (eg. operating system details, browser details, app details, device details).\n",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "subject"
+            ]
+        }
+    }
+}

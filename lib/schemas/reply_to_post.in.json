@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "post_id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "description": "The message to send to the post author.",
+                    "type": "string"
+                },
+                "send_copy": {
+                    "description": "If set to 1, a copy of the reply will be emailed to the current user.",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "message"
+            ]
+        }
+    }
+}

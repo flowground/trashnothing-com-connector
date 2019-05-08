@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "post_id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "latitude": {
+                    "type": "number"
+                },
+                "longitude": {
+                    "type": "number"
+                },
+                "location": {
+                    "description": "A location name corresponding to the given latitude and longitude.  Usually this is either a location included somewhere in the post title or content or a location description typed or selected by the user who is mapping the post.\n",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "latitude"
+            ]
+        }
+    }
+}

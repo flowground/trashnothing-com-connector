@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "post_id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "reason": {
+                    "description": "The reason that this post is being flagged.  Must be one of: 'spam', 'not free (for sale/trade/borrow)', 'illegal item', 'not family-friendly', 'other', 'mislabeled: is a Want', 'mislabeled: is an Offer'. <br /><br /> NOTE: If reason is set to 'other', the details parameter is required to be set.\n",
+                    "type": "string"
+                },
+                "details": {
+                    "description": "An explanation from the current user for why they are flagging this post.   This is useful for users to provide evidence or explain why there is a problem with the post. <br /><br /> NOTE: If reason is set to 'other', details are required.\n",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "reason"
+            ]
+        }
+    }
+}

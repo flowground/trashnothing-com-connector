@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+        "post_id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "summary": {
+                    "description": "If the post contains multiple items and not every item has been taken or received, pass a short summary of the items that have been so that the post will be updated to reflect which items are still being offered or request. Once all items in the post have been taken or received, this endpoint should be called with no summary passed so that the post will be removed from the listings.\n",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

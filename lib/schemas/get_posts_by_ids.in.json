@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "post_ids": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

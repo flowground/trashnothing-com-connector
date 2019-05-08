@@ -1,0 +1,51 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "firstname": {
+                    "description": "The first name of the user.",
+                    "type": "string"
+                },
+                "lastname": {
+                    "description": "The last name of the user.",
+                    "type": "string"
+                },
+                "public_name": {
+                    "description": "Whether or not the users' first and last name will be visible to other users. Set to 1 to enable and 0 to disable.\n",
+                    "type": "integer"
+                },
+                "digest": {
+                    "description": "The frequency of digest emails sent to this user. One of: daily, 12_hours, 8_hours, 6_hours, 4_hours, 2_hours, hourly <br /><br /> To disable digests, set this to an empty string. <br /><br /> NOTE: A weekly option with the value 'weekly' will probably be added in the future so clients should recognize weekly as a valid value that can be displayed and set if it is ever returned.\n",
+                    "type": "string"
+                },
+                "post_reminders": {
+                    "description": "Whether or not the user will receive post reminder emails (to remind them to update or repost their posts). Set to 1 to enable and 0 to disable.\n",
+                    "type": "integer"
+                },
+                "password": {
+                    "description": "A new password for the users' account.  When setting a new password, the old_password parameter must be passed and set to the users' current password. <br /><br /> NOTE: The password and old_password properties can NOT be used when the user property has_password is false.  Instead, use the password reset endpoint to have a new password emailed to the user.\n",
+                    "type": "string"
+                },
+                "old_password": {
+                    "description": "The users current password.  This is required when the user is changing their password.",
+                    "type": "string"
+                },
+                "profile_image_source": {
+                    "description": "The source of the users' profile image. The values this can be set to change dynamically based on the users' account. To get the values that can be used, use the source properties returned by the profile images endpoint.\n",
+                    "type": "string"
+                },
+                "last_listings_view": {
+                    "description": "The UTC date and time when the user last viewed the newest posts on the All Posts page.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "public_post_sources": {
+                    "description": "A comma separated list of the sources to show public posts from. Currently only 'trashnothing' is supported.\nIf not passed, all sources will be enabled.\nIf set to an empty string, no sources will be enabled which effectively disables public posts for the user so that the user will only see posts from the groups they are a member of.\n",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
